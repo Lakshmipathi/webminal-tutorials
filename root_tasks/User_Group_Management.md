@@ -1,7 +1,7 @@
 
 [Source](https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-users-tools.html "Permalink to 32.2.&nbsp;User and Group Management Tools")
 
-### 32.2.&nbsp;User and Group Management Tools
+### &nbsp;User and Group Management Tools
 
 Managing users and groups can be a tedious task; The following command line tools can also be used to manage users and groups: 
 
@@ -11,10 +11,7 @@ Managing users and groups can be a tedious task; The following command line tool
 * `pwck`, `grpck` — Tools used for the verification of the password, group, and associated shadow files 
 * `pwconv`, `pwunconv` — Tools used for the conversion of passwords to shadow passwords and back to standard passwords 
 
-### 32.2.1.&nbsp;Command Line Configuration
-
-
-#### 32.2.2. Adding a User
+#### 1. Adding a User
 
 To add a user to the system: 
 
@@ -48,7 +45,7 @@ Command line options for `useradd` are detailed below.
 
 
 
-#### 32.2.3. Adding a Group
+#### 2. Adding a Group
 
 To add a group to the system, use the command `groupadd`: 
     
@@ -64,7 +61,7 @@ Command line options for `groupadd` are detailed below.
 | `-r`             | Create a system group with a GID less than 500                                                                            |  
 | `-f`             | When used with `-g`_`<gid>`_ and _`<gid>`_ already exists, `groupadd` will choose another unique _`<gid>`_ for the group. |  
 
-#### 32.2.4. Password Aging
+#### 3. Password Aging
 
 
 For security reasons, it is advisable to require users to change their passwords periodically. 
@@ -115,7 +112,7 @@ Using a null password, while convenient, is a highly unsecure practice, as any t
 
 In either case, upon initial log in, the user is prompted for a new password. 
 
-### 32.2.5.&nbsp;Explaining the Process
+### 4.&nbsp;Explaining the Process
 
 The following steps illustrate what happens if the command `useradd juan` is issued on a system that has shadow passwords enabled: 
 
