@@ -76,21 +76,22 @@ title: cd
 	cd dir3
 переместит нас в каталог dir3
 
->`Советы и трюки:` команда
+>`Советы и приемы:` команда
 
         cd ..
 
-переместит в родительский каталог, т.н. dir2.
-Now type,
+переместит в родительский каталог, а именно в dir2.
+Теперь наберите
 
 	cd -
-will move you to previous working directory 
-i.e dir3 Cool ,isn't it? and a simple
+
+эта команда переместит в предыдущий каталог,
+а именно dir3 Здорово, не так ли, а просто 
 
 	cd 
-will move to the your home directory.
+переместит в домашний каталог.
 
-That's it.You have successfully completed lesson1
-Now to start next lesson.
+Вот и все. Вы успешно завершили первый урок.
+Можете приступить к следующему.
 
 
