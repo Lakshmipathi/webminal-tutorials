@@ -1,4 +1,4 @@
-title: Lesson1 - Basic commands to navigate directories 
+title: Урок 1 - Основные команды навигации по файловой системе
 
 ### Урок 1 - Основные команды навигации по файловой системе
 
