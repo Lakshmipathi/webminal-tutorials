@@ -1,4 +1,4 @@
-title: Lesson1 - Basic commands to navigate directories 
+title: Урок 1 - Основные команды навигации по файловой системе
 
 ### Урок 1 - Основные команды навигации по файловой системе
 
@@ -10,7 +10,7 @@ title: Lesson1 - Basic commands to navigate directories
 нажмите Ввод и прочтите результат выполнения комманды :)
 title: pwd
 
-Видите нечто похожее на */home/yourname* ? Здорово, Вы определили текущий каталог.
+Видите нечто похожее на */home/вашеимя* ? Здорово, Вы определили текущий каталог.
 Поздравляем! Вы вступили в экслюзивный клуб пользователей командной строки linux :)
 
 Как Вы уже поняли, команда
@@ -31,75 +31,67 @@ title: mkdir
 
 *`mkdir: created directory dir1`*
 
-Круто, теперь Вы создали новый каталог. Предположим Вы хотите создать более одного каталога
-
-Wow,now you created a new  directory. Lets say you want to create more than 
-one directory instead of invoking mkdir multiple(three) times-like.
-
+Круто, теперь Вы создали новый каталог. Предположим, Вы хотите создать более одного каталога, 
+вместо того, чтобы выполнять mkdir несколько раз, вида 
 	mkdir -v dir2
 	mkdir -v dir2/dir3
 	mkdir -v dir2/dir3/dir4
-you can simply use 
+Вы можете просто выполнить
 
 	mkdir -vp dir2/dir3/dir4
 
-"-p" option will create parent directories for "dir4" as needed.
-In this case,it creates dir2,dir3 automatically.Now we have created 
-4 directories.How to view them?
+Ключ "-p" создает родительские каталоги для "dir4" при необходимости.
+В данном случае будут созданы dir2, dir3 автоматически. 
+Мы создали 4 каталога. Как их увидеть?
 
-To view type 'ls' and press enter
+Для просмотра наберите `ls` и нажмите Ввод.
 
 	ls
 
 title: ls
 
-listed `dir1 dir2` as directory content right? Thats exactly what we wanted
+перечислены `dir1 dir2` - содержимое каталога? Как мы и хотели.
 
-	`dumb tutor: yes,the guy with blue-t-shirt,
-		   Yeah, you ,why you look so confused?`
-	`blue-t-shirt:I created 4 directories,
-                   where is the missing dir3,dir4?`
+	`тупой наставник: Эй, парень в синей футболке, чего тебя так смущает?`
+	`синяя-футболка: я создал 4 каталога, где недостающие dir3, dir4?`
 
-Good question.They are created inside dir2 they won't be listed with 
-simple command like `ls`.you need to use "complex" command to view them. Try this:
+Хороший вопрос. Они созданы внутри каталога dir2 и не отображаются простой командой `ls`, 
+нужно использовать более "сложную" команду, чтобы увидеть их. Попробуйте так:
 
 	ls -R 
 
-really "complex" isn't it  :P ,btw -R stands for recursive.
+"сложно", не так ли? :P кстати -R означает Рекурсивно.
 
-Okay,we have created a new directories and listed them.Now lets 
-move into a new directory.
+Окей, мы создали новые каталоги и просмотрели их. Теперь давайте 
+перейдем в новый каталог.
 
 	cd dir2
 
-
-
-
-
 title: cd
 
-cool,you have changed to dir2 Now confirm this
-location by using previously learned `wm_pwd`(aka pwd)
-command.To move into next directory dir3
+Круто, Вы перешли в dir2, проверим так ли это с помощью команды, 
+изученной ранее `wm_pwd`(или pwd), чтобы перейти в следующий каталог dir3
 
 	cd dir3
-will place you under "dir3" directory.
+переместит нас в каталог "dir3"
 
->`Tips and tricks:` Typing 
+>`Советы и приемы:` команда
 
         cd ..
 
-will move to parent directory.i.e dir2.
-Now type,
+переместит в родительский каталог, а именно в dir2.
+Теперь наберите
 
 	cd -
-will move you to previous working directory 
-i.e dir3 Cool ,isn't it? and a simple
+
+эта команда переместит в предыдущий каталог, а именно dir3. 
+Здорово, не так ли?! 
+А просто 
 
 	cd 
-will move to the your home directory.
+переместит в домашний каталог.
 
-That's it.You have successfully completed lesson1
-Now to start next lesson.
+Вот и все. Вы успешно завершили первый урок.
+Можете приступить к следующему.
 
 
