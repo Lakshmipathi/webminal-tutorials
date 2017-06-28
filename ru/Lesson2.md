@@ -34,40 +34,41 @@ title: dir
 `dir` служит для перечисления содержимого каталога.
 Да, Вы верно догадались, команда `dir` аналогична `ls -C -b` (Знаю, Вы не догадались :P)
 
+То есть по умолчанию файлы перечислены в столбцах, отсортированы по вертикали, 
+а специальные символы представлены  escape-последовательностями.
 
-that is, by default files are listed in columns, sorted vertically,
-and special characters are represented by backslash escape sequences.
-To clear a screen,the command is
+Чтобы очистить экран есть команда 
+
 
 	clear
 
 title: clear
 
-Viola! terminal screen is cleared!!!
-Lets print some message on the terminal,
+Вуаля! Терминальный экран очищен!!!
+
+Давайте выведем сообщение в терминал,
 
 	echo "hello" 
 title: echo
 
-Cool! the message is displayed on the screen.
-Lets redirect the message to a new file instead 
-of screen.
+Клёво! Сообщение показано на экране.
+Давайте перенаправим вывод сообщения в новый файл вместо экрана.
 
 	echo "hello" > hello.txt 
 
-To append  data you must use &gt;&gt; not just &gt;
+Чтобы добавить данные используйте &gt;&gt; , а не просто &gt;
 
 	echo "linux" >> hello.txt 
 	echo "world" >> hello.txt
 
-Done.To view the file content ,do 
+Готово. Чтобы просмотреть содержимое файла выполните
 
 	cat hello.txt 
 
 title: cat
 
-so now you have viewed the file content.`cat` is 
-used to display the entire file content.<br/>
+Вы уже просмотрели содержимое фала. 
+`cat` используется для отображения полного содержимого файла.<br/>
 
 
 To view only first two lines from the file

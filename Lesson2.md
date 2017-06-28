@@ -101,7 +101,7 @@ used to display last few lines. As with `head`
 
 	tail hello.txt
 
-by default will display last 10 lines from the line.
+by default will display last 10 lines from the file.
 
 Lets check some stats of the files and directories
 we have create so far.
