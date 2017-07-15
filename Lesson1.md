@@ -1,104 +1,93 @@
-title: Lesson1 - Basic commands to navigate directories 
+In this lesson we will give you command examples.  After typing the command, press Enter to execute.
 
-### Lesson1 - Basic commands to navigate directories
-
-Simply type 
+Welcome to Lesson 1.  Do you know what your current working directory is?  Let's find out.  Type the command:
 
     $ pwd
 
+Did the command show you output similar to "/home/yourname" where "yourname" is the username you signed up with? Congratulations,you have found your current working directory and have joined exclusive club of linux commandline users!
 
-and press enter key and read on :)
-title: pwd
+For the next command we will need your current working directory to be your home directory.  Type the command:
 
-Can you see the output similar to */home/yourname* ? cool,you have found your
-current working directory.Congrats,You have joined exclusive club of
-linux commandline users :)
+	$ pwd
+	
+If you are not in your home directory, type the command:
 
-As you realized typing
+	$ cd
+	
+Now lets try to create a new directory.  Type the command: 
 
+    $ mkdir -v dir1
 
-     pwd
+Did your command prompt output:
 
+	mkdir: created directory dir1
 
-will display your current working directory.Yeah,your home is a directory.
-Now lets try to create a new directory.type the following  on the prompt 
-
-    mkdir -v dir1
-
-and press enter key.
-title: mkdir
-
-Did it say?
-
-*`mkdir: created directory dir1`*
-
-Wow,now you created a new  directory. Lets say you want to create more than 
-one directory instead of invoking mkdir multiple(three) times-like.
+Way to go! You just created a new directory. Lets say you want to create more than one directory.  You could type the command multiple times:
 
 	mkdir -v dir2
 	mkdir -v dir2/dir3
 	mkdir -v dir2/dir3/dir4
-you can simply use 
 
-	mkdir -vp dir2/dir3/dir4
+Or you can take a smart shortcut and type the command: 
 
-"-p" option will create parent directories for "dir4" as needed.
-In this case,it creates dir2,dir3 automatically.Now we have created 
-4 directories.How to view them?
+	$ mkdir -vp dir2/dir3/dir4
 
-To view type 'ls' and press enter
+The "-p" option will create all of the parent directories for "dir4".  In this case,it created 
 
-	ls
+	dir2/
+	dir2/dir3/
 
-title: ls
+automatically.  Now that we have created four directories, how do we view them? Type the command:
 
-listed `dir1 dir2` as directory content right? Thats exactly what we wanted
+	$ ls
 
-	`dumb tutor: yes,the guy with blue-t-shirt,
-		   Yeah, you ,why you look so confused?`
-	`blue-t-shirt:I created 4 directories,
-                   where is the missing dir3,dir4?`
+You may notice that the command is only showing you:
 
-Good question.They are created inside dir2 they won't be listed with 
-simple command like `ls`.you need to use "complex" command to view them. Try this:
+	dir1
+	dir2
+	
+But we made more than that, right?  Right!  Our other directories are inside of:
 
-	ls -R 
+	dir2
+	
+The command "ls" is only showing us what is inside our current working directory.  Type the command:
 
-really "complex" isn't it  :P ,btw -R stands for recursive.
+	$ ls -R 
 
-Okay,we have created a new directories and listed them.Now lets 
-move into a new directory.
+and we should get the output:
+
+	./dir1:
+
+	./dir2:
+	dir3
+
+	./dir2/dir3:
+	dir4
+
+	./dir2/dir3/dir4:
+
+The "-R" is a command argument or parameter.  For the command "ls" it stands for recursive.  Now that we have created a new directories and listed them,lets move into a new directory.  Type the command:
 
 	cd dir2
 
+You have changed to "dir2".  Lets confirm this.  Type the command:
 
+	$ pwd
 
-
-
-title: cd
-
-cool,you have changed to dir2 Now confirm this
-location by using previously learned `wm_pwd`(aka pwd)
-command.To move into next directory dir3
+Lets move into next directory.  Type the command:
 
 	cd dir3
-will place you under "dir3" directory.
+	
+And now we are in the "dir3" directory.  But what if we needed to go back?  Type the command: 
 
->`Tips and tricks:` Typing 
+	$ cd ..
 
-        cd ..
+We have moved to the parent directory, which is "dir2".  We are finished with working in this directory, so let's go back to the previous working directory.  Type the command:
 
-will move to parent directory.i.e dir2.
-Now type,
+	$ cd -
 
-	cd -
-will move you to previous working directory 
-i.e dir3 Cool ,isn't it? and a simple
+We are now back in the directory "dir3".  Do you feel like a linux commandline pro yet?  Let's go back home.  Type the command:
 
-	cd 
-will move to the your home directory.
+	$ cd
 
-That's it.You have successfully completed lesson1
-Now to start next lesson.
-
-
+We have returned to your home directory.  That's it, You have successfully completed lesson 1!  Now to start next lesson.
